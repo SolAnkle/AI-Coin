@@ -68,7 +68,7 @@ window.addEventListener('load', () => {
 });
 
 // Contract address - replace with your actual CA
-const CONTRACT_ADDRESS = 'AqneCNi3VUaBETf6ujM1g92CjR4Y6JibCPioGreXJXdK';
+const CONTRACT_ADDRESS = 'YOUR_CONTRACT_ADDRESS_HERE';
 
 // Set CA in the UI
 document.getElementById('caAddress').textContent = CONTRACT_ADDRESS;
