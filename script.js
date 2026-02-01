@@ -112,6 +112,15 @@ function formatMarketCap(value) {
 fetchMarketCap();
 setInterval(fetchMarketCap, 5000);
 
+// Close tab function
+function closeTab() {
+    window.close();
+    // Fallback if browser blocks window.close()
+    setTimeout(() => {
+        document.body.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100vh;font-family:Space Mono,monospace;color:#6B7280;text-align:center;"><p>ok. you can close this tab yourself then.</p></div>';
+    }, 100);
+}
+
 // Copy CA function
 function copyCA() {
     navigator.clipboard.writeText(CONTRACT_ADDRESS).then(() => {
